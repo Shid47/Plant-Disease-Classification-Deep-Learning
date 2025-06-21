@@ -148,20 +148,28 @@ Refer to the [Comprehensive Model Comparison Report](comprehensive_model_compari
 ## Project Structure
 
 ```
-├── app.py                         # Streamlit web application
-├── requirements.txt               # Python dependencies
+├── Execution/
+│   ├── app.py                         # Streamlit web application
+│   ├── class_indices.json             # JSON mapping of classes
+│   ├── sample/                        # Sample images for inference
+│   │   ├── apple_scab.jpg             # Sample Apple Scab leaf image
+│   │   ├── black_rot.jpg              # Sample Black Rot leaf image
+│   │   ├── cedar_apple_rust.jpg       # Sample Cedar Apple Rust leaf image
+│   │   ├── healthy.jpg                # Sample Healthy leaf image
+│   └── profile_pic.jpg                # Project profile picture
+├── requirements.txt                   # Python dependencies
 ├── scripts/
-│  
-│   ├── train_simple_cnn.ipynb        # Simple CNN training
-│   └── train_efficientnetb0.ipynb    # EfficientNetB0 training
+│   ├── split_dataset.py               # Data splitting
+│   ├── train_simple_cnn.ipynb           # Simple CNN training
+│   └── train_efficientnetb0.ipynb        # EfficientNetB0 training
 ├── models/
-│   ├── simple_cnn.h5              # Trained Simple CNN model   
-│   └── apple_disease_model_final.h5 # Final combined model
+│   ├── simple_cnn_training.h5                  # Trained Simple CNN model
+│   └── EfficeinNetb0_trainig.h5   # Final combined model
+├── logs/                              # TensorBoard logs
 ├── data/
-│   └── train_augmented/           # Downloaded & augmented dataset
-├── class_indices.json             # JSON mapping of classes
+│   └── train_augmented/               # Downloaded & augmented dataset
 ├── comprehensive_model_comparison_report.md
-├── presentation.pptx              # Project presentation
+├── presentation.pptx                  # Project presentation
 └── README.md
 ```
 
