@@ -142,7 +142,7 @@ Open the displayed URL in your browser to upload leaf images, view predictions, 
 
 Refer to the [Comprehensive Model Comparison Report](comprehensive_model_comparison_report.md) for detailed metrics:
 
-- EfficientNetB0 achieves ≈92.8% test accuracy vs. Simple CNN’s 85.2%
+- EfficientNetB0 achieves ≈97.8% test accuracy vs. Simple CNN’s 90%
 - Trade-offs in inference time, model size, and parameter count
 
 ## Project Structure
